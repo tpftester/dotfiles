@@ -74,6 +74,7 @@ alias inss='ssh inspire_workout@workout.theprojectfactory.com'
 # Git
 # ========================================================================
 alias gs='git status'
+alias ga='git add'
 alias gd='git diff'
 alias gb='git branch'
 alias gc='git commit'
