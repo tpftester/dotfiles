@@ -1,0 +1,48 @@
+[user]
+	name = David Parry
+	email = david.parry@suranyami.com
+[github]
+	user = suranyami
+	token = 94939d326abf23d9649b09e13cf6f36a
+[color]
+	ui = auto
+	status = auto
+	diff = auto
+	branch = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = cyan
+[core]
+	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[merge]
+	keepBackup = false;
+	tool = p4merge
+[mergetool "p4merge"]
+	cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+[diff]
+	external = p4diff
+	summary = true
+[core]
+	excludesfile = ~/.gitignore
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log -p
+	pl = pull --rebase origin master
+	pu = push origin master
