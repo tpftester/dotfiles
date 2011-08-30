@@ -7,6 +7,7 @@ Dir['*'].each do |file|
   next if file =~ /install/
   target = File.join(home, ".#{file}")
    if File.exists?(target)
+     # TODO: Should probably back these up first.
      File.delete(target)
      puts "Deleting #{target}"
    end
