@@ -14,12 +14,8 @@
 .DS_Store
 profile
 
-
-*.sqlite3
 *.log
 coverage
 .idea
-CVS
-.svn
 *.class
 *.iws
