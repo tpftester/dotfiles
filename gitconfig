@@ -37,7 +37,7 @@
 	external = p4diff
 	summary = true
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/djp/.gitignore_global
 [alias]
 	st = status
 	ci = commit
@@ -59,3 +59,9 @@
 	pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
