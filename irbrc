@@ -1,27 +1,6 @@
 require 'rubygems'
-require 'irb/completion'
-require 'pp'
- 
-begin
-  # load wirble
-  require 'wirble'
- 
-  # start wirble (with color)
-  Wirble.init
-  Wirble.colorize
-rescue LoadError => err
-  warn "Couldn't load Wirble: #{err}"
-end
- 
-begin
-  require 'hirb'
-  Hirb.enable
-rescue LoadError => err
-  warn "Couldn't load hirb: #{err}"
-end
- 
-alias :q :exit
- 
+require 'irbtools'
+  
 current_dir = Dir.pwd.split('/')[-1]
 IRB.conf[:PROMPT].each do |prompt|
   prompt_i = IRB.conf[:PROMPT][prompt.first][:PROMPT_I]
