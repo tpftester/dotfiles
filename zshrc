@@ -14,6 +14,7 @@ source $ZSH/oh-my-zsh.sh
 # ========================================================================
 # Add my bin directory to the PATH
 export PATH=~/bin:$PATH
+export PATH=`npm bin`:$PATH
 
 # And the path to cabal binaries for Haskell
 export PATH=~/w.cabal/bin:$PATH
