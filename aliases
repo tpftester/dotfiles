@@ -39,11 +39,9 @@ alias mipm='rvm use 1.8.7; cd ~/development/mip/mobile'
 
 alias vdb='mysql val_dev -u val_dev -pval_dev'
 
-alias staging='ssh tpf@tpf.dyndns-server.com'
-alias prod='ssh tpf@ecl_prod.theprojectfactory.com'
+alias prod='ssh tpf@workoutapp.com.au'
 
-alias inss='ssh inspire_workout@workout.theprojectfactory.com'
-
+alias lola='rvm use 1.9.2; cd ~/development/lola/server'
 
 # ========================================================================
 # Git
