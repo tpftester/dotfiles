@@ -6,6 +6,8 @@ IRB.conf[:PROMPT].each do |prompt|
   prompt_i = IRB.conf[:PROMPT][prompt.first][:PROMPT_I]
   IRB.conf[:PROMPT][prompt.first][:PROMPT_I] = "#{current_dir} #{prompt_i}"
 end
+
+Wirb.load_schema :classic_paint
  
 def ri(*names) 
   system(%{ri #{names.map {|name| name.to_s}.join(" ")}}) 
