@@ -10,25 +10,31 @@ export LC_CTYPE=en_US.UTF-8
 source $ZSH/oh-my-zsh.sh
 
 # ========================================================================
-# Paths
-# ========================================================================
-# Add my bin directory to the PATH
-export PATH=~/bin:$PATH
-export PATH=`npm bin`:$PATH
-
-# And the path to cabal binaries for Haskell
-export PATH=~/w.cabal/bin:$PATH
-
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH
-export PATH=/usr/local/var/postgres:$PATH
-
-# ========================================================================
 # Maven
 # ========================================================================
 export M2_HOME=/usr/local/apache-maven-3.0.1
 export M2=$M2_HOME/bin
-export PATH=$M2:$PATH
 export MAVEN_OPTS="-Xms256m -Xmx512m"
+
+# ========================================================================
+# Paths
+# ========================================================================
+# Add my bin directory to the PATH
+export PATH=~/bin:$PATH
+
+# Maven path
+export PATH=$M2:$PATH
+
+# Node package manager
+export PATH=`npm bin`:$PATH
+
+# Cabal binaries for Haskell
+export PATH=~/w.cabal/bin:$PATH
+
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/mysql/bin:$PATH
+export PATH=/usr/local/var/postgres:$PATH
 
 # ========================================================================
 # Java
@@ -42,7 +48,7 @@ export TOMCAT_HOME=${CATALINA_HOME}
 # ========================================================================
 export SVN_EDITOR='mate -w'
 export GIT_EDITOR="~/bin/mate -w"
-export EDITOR="~/bin/mate -w"
+export EDITOR="/Users/djp/bin/mate -w"
 
 # ========================================================================
 # TextMate variables
