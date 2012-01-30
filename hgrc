@@ -1,33 +1,33 @@
 [ui]
-username = David Parry <david.parry@suranyami.com>
+  username = David Parry <david.parry@suranyami.com>
 
 [extensions]
-color =
-pager =
-hgext.graphlog =
-hgext.mq =
-hgext.bookmarks =
-hggit =
+  color =
+  pager =
+  hgext.graphlog =
+  hgext.mq =
+  hgext.bookmarks =
+  hggit =
 
 [pager]
-pager = LESS='FSRX' less
-ignore = version, help, push, pull, clone, update
+  pager = LESS='FSRX' less
+  ignore = version, help, push, pull, clone, update
 
 [color]
-status.modified = magenta bold
-status.added = green bold
-status.removed = red bold
-status.deleted = cyan bold
-status.unknown = yellow bold
-status.ignored = black bold
+  status.modified = magenta bold
+  status.added = green bold
+  status.removed = red bold
+  status.deleted = cyan bold
+  status.unknown = yellow bold
+  status.ignored = black bold
 
-diff.diffline = bold
-diff.extended = cyan bold
-diff.file_a = red bold
-diff.file_b = green bold
-diff.hunk = magenta
-diff.deleted = red
-diff.inserted = green
-diff.changed = white
-diff.trailingwhitespace = bold red_background
+  diff.diffline = bold
+  diff.extended = cyan bold
+  diff.file_a = red bold
+  diff.file_b = green bold
+  diff.hunk = magenta
+  diff.deleted = red
+  diff.inserted = green
+  diff.changed = white
+  diff.trailingwhitespace = bold red_background
 
