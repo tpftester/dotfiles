@@ -11,37 +11,7 @@ alias nginx_restart='kill -HUP `cat /usr/local/var/run/nginx.pid`'
 # Shows a sorted listing of how big files/directories are
 alias duse='du -k --max-depth=1 | sort +0 -8 -b -n -r'
 
-alias la='ls -AF'
-alias ll='ls -AlF'
-
 alias vi='vim'
-
-# ========================================================================
-# Projects
-# ========================================================================
-
-alias wrap='cd ~/development/wrap_simulator; rvm use ruby 1.9.2'
-alias cable='cd ~/development/cablegate; rvm use system'
-
-alias ccap='rvm use 1.8.7; cd ~/development/ccap'
-
-alias mrs='rvm use 1.8.7; cd ~/development/mrsteamy/server'
-alias mrm='rvm use 1.8.7; cd ~/development/mrsteamy/mobile'
-
-alias gams='rvm use 1.8.7; cd ~/development/gama/server'
-alias gamm='rvm use 1.8.7; cd ~/development/gama/mobile'
-alias gamp='rvm use 1.8.7; cd ~/development/gama/prototype/Server'
-
-alias insp='rvm use 1.9.2; cd ~/development/InspireMFP'
-
-alias mips='rvm use 1.8.7; cd ~/development/mip/server'
-alias mipm='rvm use 1.8.7; cd ~/development/mip/mobile'
-
-alias vdb='mysql val_dev -u val_dev -pval_dev'
-
-alias prod='ssh tpf@workoutapp.com.au'
-
-alias lola='rvm use 1.9.3; cd ~/development/lola/server'
 
 # ========================================================================
 # Git
