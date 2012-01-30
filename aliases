@@ -41,7 +41,7 @@ alias vdb='mysql val_dev -u val_dev -pval_dev'
 
 alias prod='ssh tpf@workoutapp.com.au'
 
-alias lola='rvm use 1.9.2; cd ~/development/lola/server'
+alias lola='rvm use 1.9.3; cd ~/development/lola/server'
 
 # ========================================================================
 # Git
