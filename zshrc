@@ -49,7 +49,7 @@ export TOMCAT_HOME=${CATALINA_HOME}
 # ========================================================================
 export SVN_EDITOR='mate -w'
 export GIT_EDITOR="~/bin/mate -w"
-export EDITOR="/Users/djp/bin/mate -w"
+export EDITOR="$HOME/bin/mate -w"
 
 # ========================================================================
 # TextMate variables
@@ -61,13 +61,18 @@ export TM_GIT=/usr/local/git/bin/git
 # ========================================================================
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-export HBASE_HOME=/usr/local/Cellar/hbase/0.90.5/libexec
+# export HBASE_HOME=/usr/local/Cellar/hbase/0.90.5/libexec
+
+
+source ~/.aliases
+
+# These are private project aliases we don't want to give to other people.
+if [[ -s "$HOME/.project_aliases" ]]; then
+  source "$HOME/.project_aliases"
+fi
 
 # ========================================================================
 # Default working directory
 # ========================================================================
 cd ~/development
-
-
-source ~/.aliases
 
