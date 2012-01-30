@@ -1,27 +1,33 @@
 [user]
 	name = David Parry
 	email = david.parry@suranyami.com
+	
 [github]
 	user = suranyami
 	token = 94939d326abf23d9649b09e13cf6f36a
+	
 [color]
 	ui = auto
 	status = auto
 	diff = auto
 	branch = auto
+	
 [color "branch"]
 	current = yellow reverse
 	local = yellow
 	remote = green
+	
 [color "diff"]
 	meta = yellow bold
 	frag = magenta bold
 	old = red bold
 	new = green bold
+	
 [color "status"]
 	added = green
 	changed = yellow
 	untracked = cyan
+	
 [core]
 	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 
@@ -52,7 +58,8 @@
 
 
 [core]
-	excludesfile = /Users/djp/.gitignore_global
+	excludesfile = $HOME/.gitignore_global
+	
 [alias]
 	st = status
 	ci = commit
@@ -62,15 +69,19 @@
 	lg = log -p
 	pl = pull --rebase origin master
 	pu = push origin master
+	
 [url "git@github.com:"]
 	insteadOf = "gh:"
 	pushInsteadOf = "github:"
 	pushInsteadOf = "git://github.com/"
+	
 [url "git://github.com/"]
 	insteadOf = "github:"
+	
 [url "git@gist.github.com:"]
 	insteadOf = "gst:"
 	pushInsteadOf = "gist:"
 	pushInsteadOf = "git://gist.github.com/"
+	
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
