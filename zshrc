@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="josh"
 plugins=(rails git textmate ruby lighthouse osx)
 
-export unsetopt correct_all
+export unsetopt=correct_all
 export skip_global_compinit=1
 export LC_CTYPE=en_US.UTF-8
 
@@ -26,7 +26,8 @@ export PATH=~/bin:$PATH
 export PATH=$M2:$PATH
 
 # Node package manager
-export PATH=`npm bin`:$PATH
+export NODE_PATH=/usr/local/lib/node_modules
+# export PATH=`npm bin`:$PATH
 
 # Cabal binaries for Haskell
 export PATH=~/w.cabal/bin:$PATH
@@ -60,10 +61,13 @@ export TM_GIT=/usr/local/git/bin/git
 # ========================================================================
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+export HBASE_HOME=/usr/local/Cellar/hbase/0.90.5/libexec
+
 # ========================================================================
 # Default working directory
 # ========================================================================
 cd ~/development
+
 
 source ~/.aliases
 
