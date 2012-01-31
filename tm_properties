@@ -1,0 +1,5 @@
+softTabs = true
+tabSize = 2
+
+[ attr.untitled ]
+fileType = 'source.ruby'
