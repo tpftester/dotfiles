@@ -71,8 +71,7 @@ if [[ -s "$HOME/.project_aliases" ]]; then
   source "$HOME/.project_aliases"
 fi
 
-# ========================================================================
-# Default working directory
-# ========================================================================
-cd ~/development
-
+# These are private startup actions we don't want to give to other people.
+if [[ -s "$HOME/.startup_actions" ]]; then
+  source "$HOME/.startup_actions"
+fi
