@@ -16,7 +16,7 @@ files = opts[:individual] if opts[:individual]
 files = [files] unless files.is_a? Array
 
 files.each do |file|
-  next if file =~ /install/
+  next if file =~ /install|osx|Gemfile*/
   target = File.join(home, ".#{file}")
 
   ok_to_delete = if opts[:force]
