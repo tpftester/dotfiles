@@ -22,9 +22,11 @@ files.each do |file|
   ok_to_delete = if opts[:force]
     true
   else
-    print "Overwrite file '#{target}'? (y/n) "
-    response = gets.chomp.downcase
-    response == 'y'
+    if File.exists?(target)
+      print "Overwrite file '#{target}'? (y/n) "
+      response = gets.chomp.downcase
+      response == 'y'
+    end
   end
 
   if File.exists?(target) 
