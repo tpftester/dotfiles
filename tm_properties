@@ -1,5 +1,26 @@
+## property file for textmate 2.0
+# @see https://gist.github.com/1478685
+
+windowTitle          = "${TM_DIRECTORY/^.+\/workspace\///}: $TM_DISPLAYNAME"
+
+exclude = "{*.{o,pyc},Icon\r,CVS,_darcs,_MTN,\{arch\},blib,*~.nib,*.log}"
+include = "{.tm_properties,.htaccess}"
+
 softTabs = true
 tabSize = 2
+
+TM_RUBY = $HOME/.rvm/bin/rvm-auto-ruby
+
+[ .git/COMMIT_EDITMSG ]
+softWrap         = true
+spellChecking    = true
+spellingLanguage = 'en'
+
+[ *.{icns,ico,jpg,jpeg,m4v,nib,pdf,png,psd,pyc,rtf,tif,tiff,xib} ]
+binary           = true
+
+[ "{README,INSTALL,LICENSE,TODO}" ]
+fileType         = "text.plain"
 
 [ attr.untitled ]
 fileType = 'source.ruby'
