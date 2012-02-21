@@ -37,6 +37,9 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
 export PATH=/usr/local/var/postgres:$PATH
 
+# Add XCode bin path for gcc
+export PATH=$PATH:/Developer/usr/bin
+
 # ========================================================================
 # Java
 # ========================================================================
@@ -75,3 +78,4 @@ fi
 if [[ -s "$HOME/.startup_actions" ]]; then
   source "$HOME/.startup_actions"
 fi
+
