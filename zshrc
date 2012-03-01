@@ -1,7 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 export ZSH_THEME="josh"
-plugins=(rails git textmate ruby lighthouse osx)
+plugins=(rails git textmate ruby lighthouse osx bundler brew cake heroku node npm rails3 rvm terminalapp cap nyan)
 
 export unsetopt=correct_all
 export skip_global_compinit=1
@@ -24,10 +24,6 @@ export PATH=~/bin:$PATH
 
 # Maven path
 export PATH=$M2:$PATH
-
-# Node package manager
-export NODE_PATH=/usr/local/lib/node_modules
-# export PATH=`npm bin`:$PATH
 
 # Cabal binaries for Haskell
 export PATH=~/w.cabal/bin:$PATH
@@ -78,4 +74,8 @@ fi
 if [[ -s "$HOME/.startup_actions" ]]; then
   source "$HOME/.startup_actions"
 fi
+
+# Node package manager
+export NODE_PATH="/usr/local/lib/node_modules"
+export PATH=`npm bin`:$PATH
 
