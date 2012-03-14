@@ -7,14 +7,9 @@ export unsetopt=correct_all
 export skip_global_compinit=1
 export LC_CTYPE=en_US.UTF-8
 
-source $ZSH/oh-my-zsh.sh
-
-# ========================================================================
-# Maven
-# ========================================================================
-export M2_HOME=/usr/local/apache-maven-3.0.1
-export M2=$M2_HOME/bin
-export MAVEN_OPTS="-Xms256m -Xmx512m"
+if [[ -f $ZSH/oh-my-zsh.sh ]]; then
+   source $ZSH/oh-my-zsh.sh
+fi
 
 # ========================================================================
 # Paths
@@ -24,9 +19,6 @@ export PATH=~/bin:$PATH
 
 # Maven path
 export PATH=$M2:$PATH
-
-# Cabal binaries for Haskell
-export PATH=~/w.cabal/bin:$PATH
 
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
@@ -44,24 +36,9 @@ export CATALINA_HOME=/Library/Tomcat
 export TOMCAT_HOME=${CATALINA_HOME}
 
 # ========================================================================
-# Editors
-# ========================================================================
-export SVN_EDITOR='mate -w'
-export GIT_EDITOR="~/bin/mate -w"
-export EDITOR="$HOME/bin/mate -w"
-
-# ========================================================================
 # TextMate variables
 # ========================================================================
 export TM_GIT=/usr/local/git/bin/git
-
-# ========================================================================
-# Ruby Version Manager
-# ========================================================================
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-# export HBASE_HOME=/usr/local/Cellar/hbase/0.90.5/libexec
-
 
 source ~/.aliases
 
@@ -74,8 +51,4 @@ fi
 if [[ -s "$HOME/.startup_actions" ]]; then
   source "$HOME/.startup_actions"
 fi
-
-# Node package manager
-export NODE_PATH="/usr/local/lib/node_modules"
-export PATH=`npm bin`:$PATH
 
